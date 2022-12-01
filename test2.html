@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+  <style>
+    .box{
+      width: 300px;
+      margin: 0 auto;
+
+    }
+    button{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100px;
+      height: 50px;
+      background-color: #4CAF50;
+      padding: 20px;
+
+    }
+  </style>
+</head>
+<body>
+<button>bbb</button>
+
+<div class="box"></div>
+
+
+<script>
+
+function getRandomName(){
+  names=['bobby','mary','joe','jane'];
+  return names[Math.floor(Math.random()*names.length)]
+}
+
+btn = document.querySelector('button');
+btn.addEventListener('click',function(){
+  document.querySelector('.box').innerHTML=getRandomName();
+});
+document.write(document.URL)
+
+</script>
+
+
+
+</body>
+</html>
